@@ -17,8 +17,8 @@ var jspdf = (window as any).jsPDF;
 export class AppComponent{
   @ViewChild('pdfcanvas', { static: true }) canvas!: ElementRef<HTMLCanvasElement>;
   canvaspdf: any;
-
   pdf: any;
+  selectedColor : any;
 
 
   ngOnInit() {
@@ -99,7 +99,10 @@ brushsize(ev:any){
 
   this.pdf.setBrushSize(num);
 }
-
+testevent(event : any) {
+  this.selectedColor = event.target.value
+  this.changecolor(event.target.value);
+}
 
   onclick(){
 

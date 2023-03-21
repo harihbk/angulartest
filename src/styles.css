@@ -71,6 +71,10 @@ button:focus {
 
 .toolbar .tool input {
   width: 50px;
+  cursor: pointer;
+}
+.toolbar .tool input::-webkit-color-swatch {
+  border-radius: 5px;
 }
 
 .toolbar .tool .color-tool {
@@ -83,7 +87,11 @@ button:focus {
   margin: 0 5px;
   box-shadow: 0px 0px 7px 1px #ccc;
 }
-
+.toolbar .tool.color input {
+  height: 30px !important;
+  border: 0;
+  background: transparent;
+}
 .toolbar .tool .color-tool.active {
   position: relative;
 }

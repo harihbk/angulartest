@@ -43,12 +43,13 @@
 		</div>
 		<div class="tool color">
 			<label for="">Color</label>
-			<button class="color-tool active" style="background-color: #212121;"
+			<input  type="color" name="" id="" (input)="testevent($event)" value="selectedColor" data-type="color">
+			<!-- <button class="color-tool active" style="background-color: #212121;"
 				(click)="changecolor('#212121')"></button>
 			<button class="color-tool" style="background-color: red;" (click)="changecolor('red')"></button>
 			<button class="color-tool" style="background-color: blue;" (click)="changecolor('blue')"></button>
 			<button class="color-tool" style="background-color: green;" (click)="changecolor('green')"></button>
-			<button class="color-tool" style="background-color: yellow;" (click)="changecolor('yellow')"></button>
+			<button class="color-tool" style="background-color: yellow;" (click)="changecolor('yellow')"></button> -->
 		</div>
 		<div class="tool">
 			<button class="tool-button active" onclick="enableSelector(event)">
